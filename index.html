@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="csa">
+<head>
+  <meta charset="UTF-8">
+  <title>CSA CRM</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+  <link rel="stylesheet" href="app/css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSA CRM</h1>
+    <nav>
+      <a href="">About</a>
+        <a href="/#/">Home</a>
+    </nav>
+  </header>
+
+  <div ng-view></div>
+
+  <script src="app/app.module.js"></script>
+
+<!--  auth -->
+  <script src="app/auth/auth.module.js" type="text/javascript"></script>
+  <script src="app/auth/config.route.js"type="text/javascript"></script>
+
+  <!-- landing -->
+  <script src="app/landing/landing.module.js"></script>
+  <script src="app/landing/config.route.js"></script>
+
+<!--   farmer -->
+  <script src="app/farmer/farmer.module.js"></script>
+  <script src="app/farmer/config.route.js"></script>
+</body>
+</html>
